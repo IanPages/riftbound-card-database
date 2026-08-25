@@ -3,6 +3,7 @@ import re
 from pathlib import Path
 
 CSV_PATH = Path(__file__).parent / "cards.csv"
+DB_PATH = Path(__file__).parent / "all_cards_database.csv"
 HEADER = ["name", "set", "quantity", "type", "color", "altArt", "overnumbered", "image"]
 
 
@@ -80,9 +81,26 @@ def build_image_filename(name: str, set_code: str, alt_art: bool, overnumbered: 
     return f"{image}.avif"
 
 
+def load_all_cards_db() -> list[dict[str, str]]:
+    if not DB_PATH.exists():
+        return []
+    with DB_PATH.open("r", newline="", encoding="utf-8") as csvfile:
+        reader = csv.DictReader(csvfile)
+        return [row for row in reader]
+
+
+def find_image_url_in_db(db_cards: list[dict[str, str]], name: str, set_code: str) -> str | None:
+    for card in db_cards:
+        if card["name"].strip().lower() == name.strip().lower() and card["set"].strip().lower() == set_code.strip().lower():
+            return card["image"]
+    return None
+
+
 def main() -> None:
     print("Add or update Riftbound card entries")
     print("Type 'exit' for card name to quit.\n")
+    
+    db_cards = load_all_cards_db()
 
     while True:
         card_color = input("Color(s) for this session (calm, fury, mind, body, chaos, order; separate with &, comma, semicolon, or space): ").strip()
@@ -127,7 +145,13 @@ def main() -> None:
         alt_art = prompt_bool("Alt art?")
         overnumbered = prompt_bool("Overnumbered?")
 
-        image = build_image_filename(name, set_code, alt_art, overnumbered)
+        db_image_url = find_image_url_in_db(db_cards, name, set_code)
+        if db_image_url:
+            image = db_image_url
+            print(f"Found image URL in database: {image}")
+        else:
+            image = build_image_filename(name, set_code, alt_art, overnumbered)
+            print(f"Image not found in database, falling back to local filename: {image}")
 
         cards = load_cards()
         new_card = {

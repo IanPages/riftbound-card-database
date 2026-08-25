@@ -1,2 +1,3 @@
 name,set,quantity,type,color,altArt,overnumbered,image
-Scuttle Crab,UNL,1,UNIT,CALM,FALSE,FALSE,scuttle-crab-unl.avif
+Death Mark,VEN,1,SPELL,FURY&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/87ccfb8d1c19f402bb37ffa392011ee2f0880aa9-744x1039.png
+Discipline,OGN,1,SPELL,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8b9613970b505e3ad6abe2d51d091778314a7d48-744x1039.png
