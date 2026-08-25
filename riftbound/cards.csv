@@ -1,3 +1,81 @@
 name,set,quantity,type,color,altArt,overnumbered,image
 Death Mark,VEN,1,SPELL,FURY&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/87ccfb8d1c19f402bb37ffa392011ee2f0880aa9-744x1039.png
 Discipline,OGN,1,SPELL,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8b9613970b505e3ad6abe2d51d091778314a7d48-744x1039.png
+"Swain, visionary",VEN,2,UNIT,MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/66d8ec4322d6734719451bb3e004b7d2ec71af87-744x1039.png
+"Mel, defiant soul",VEN,2,UNIT,MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/214567717b4f0156ff06c923e1603234cb52db61-744x1039.png
+"jayce, hammer in hand",VEN,4,UNIT,MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2dcecc0aab2b62e48388177cc27d220fd70b8a78-744x1039.png
+"riven, shattered",VEN,6,UNIT,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/929f7184d11756933729ab4d7e2e88547e6dd49b-744x1039.png
+"ambessa, the wolf",VEN,2,UNIT,BODY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3907dc56d3a639e62f5222eaa0fd589c7a582da6-744x1039.png
+"renekton, rage fueled",VEN,5,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2f6eb3e8328048ad52617c8639ecbe2c287efa36-744x1039.png
+"fiora, victorious",VEN,1,UNIT,ORDER,false,false,fiora-victorious-ven.avif
+"Kayle, justified",VEN,2,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0fec986bfca86382c61770575ed20e1799b6b830-744x1039.png
+"shen, scourge of shadows",VEN,2,UNIT,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bbe849918c7f4189379ae8957dd427a3f272a1a6-744x1039.png
+"rengar, unseen",UNL,1,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/80c7d1c62301dd6e3ced910156f3fdeb8d34a621-744x1039.png
+"jhin, murderous artist",UNL,3,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8da724a842cf61cb24c3c02dd99adc93a9222e06-744x1039.png
+"malzahar, fanatic",OGN,1,UNIT,MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ba1fa3a18b1c2ff132ad536577e53deb49bce1f9-744x1039.png
+"rengar, pouncing",SFD,1,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e24eb3fb835c4762479da5608b018785ef22e02c-744x1039.png
+"Heimerdinger, inventor",OGN,1,UNIT,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5b14a5f9d567c90329c151a8cc72d870b47b1434-744x1039.png
+"kennen, keeper of balance",VEN,2,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/446ff54c091b07627f826952f45ee40e9976d040-744x1039.png
+"vi, hotheaded",UNL,1,UNIT,FURY,true,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/03a55e8d494d7efe20da792365161f5c43c20779-744x1039.png
+"xerath, freed",UNL,1,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ef52e66a137a80cf5df862f31a114bfc00914a93-744x1039.png
+"illaoi, prophet of the great kraken",VEN,1,UNIT,CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/86fccf469e67fb89312e0c860842e2801a8b12e7-744x1039.png
+"Morgana, vindictive",VEN,1,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f5015b3077bbe6fbcdb0437fd47f119040e26ca3-744x1039.png
+"Syndra, transcendent",UNL,1,UNIT,CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a3695d011175801aaf6ec5a6557b65b8d6341e81-744x1039.png
+"poppy,paragon",UNL,1,UNIT,BODY,false,false,poppyparagon-unl.avif
+"Ashe, focused",UNL,1,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ebc033772f2005b7f39ba87ba9ea35f43df0da7a-744x1039.png
+"Diana, lunari",UNL,1,UNIT,MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3e284397713abb21d2c8d9b85202ab65d21689e9-744x1039.png
+"Sivir, mercenary",SFD,1,UNIT,CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/cb07b4adc6e301fae973ab13156028390facbad2-744x1039.png
+"Jax, unmatched",SFD,1,UNIT,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3d425589c74dbff818fa09db134fdd8bb7136420-744x1039.png
+"Leblanc, fragmented",UNL,1,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ee9f8d7a65e57c1d907edd4e5df2a3ea6966bff9-744x1039.png
+"Vi, destructive",OGN,1,UNIT,FURY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7ab52254ac49b8853fc7ae65b03aaee3f8c5994a-744x1039.png
+"Karthus, eternal",OGN,1,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/df3497ce6a602da554813340f572240675c7f0e2-744x1039.png
+"Yuumi, magical cat",UNL,1,UNIT,CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/588ddfeb01ab7b37110d8a7e656cf9f35530ce4e-744x1039.png
+"Galio, indefatigable",UNL,1,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fc3f1248dc4a02ce90ce172c3b3d5ec35e5f14c3-744x1039.png
+"Soraka, wanderer",SFD,1,UNIT,ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fc329097625a1f98a564134945950bd3bd3610a3-744x1039.png
+Rogue Assasin,VEN,1,LEGEND,CHAOS&CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0d53b477ed43fb9bbed84858443a606b2b51a2b5-744x1039.png
+Matriarch of War,VEN,1,LEGEND,BODY&ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/49e81916d7ae72b24de845223e1798652d26e789-744x1039.png
+Blind Monk,OGN,1,LEGEND,BODY&CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ffe064e002d3b9a366748eb85102a769b2545835-744x1039.png
+Herald of the Arcane,OGN,1,LEGEND,MIND&ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/913236dabf1e4f71650bbba46870fff8163e2eff-744x1039.png
+Blade dancer,SFD,1,LEGEND,CALM&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/656ef2d1724b818e9e737ec5dcce923de067a316-744x1039.png
+Nine-tailed fox,OGN,1,LEGEND,CALM&MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fbce641f5e4d8cdf2956e8ead5884b6cd3ccd90d-744x1040.png
+Piltover Enforcer,UNL,1,LEGEND,FURY&ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b52fca3d644599008c4b1a67ffd359a9f9c4d8d7-744x1039.png
+Curator of the Sands,VEN,1,LEGEND,MIND&CALM,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f26a25c5fddba7da788455c3d82b85c5abc7a2eb-744x1039.png
+Eye of twilight,VEN,2,LEGEND,CALM&ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/54388a3124b7e1f0331e5970f952778db5f24500-744x1039.png
+Heart of the Tempest,VEN,3,LEGEND,CHAOS&ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0eab83392b310417d2630d50a3bfee3dd02b31c4-744x1039.png
+Voidreaver,UNL,1,LEGEND,BODY&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a5db0b3340a189de1cf9d8174b11eb583f19ea28-744x1039.png
+Soul's Reflection,VEN,3,LEGEND,MIND&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2e9e60b3f161b41219c40ef0426049634fb7ba1a-744x1039.png
+Master of Shadows,VEN,4,LEGEND,FURY&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/aa316eb1b01c8d036eaba84b03909027fe69f6e2-744x1039.png
+Defender of Tomorrow,VEN,2,LEGEND,MIND&BODY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/670b7efd367a42beba11c18fb59e240a7c574a57-744x1039.png
+Virtuoso,VEN,1,LEGEND,FURY&MIND,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d1e6947cf43a19488a2c31f71a4887aa0423a966-744x1039.png
+Pridestalker,UNL,1,LEGEND,FURY&BODY,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b3d3085f62aee993b9f5b80d4659a88439da83be-744x1039.png
+Unforgiven,OGN,1,LEGEND,CALM&CHAOS,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/68e4d3230b785738ae9d86f780f7f5607ef11807-744x1040.png
+Green Father,UNL,2,LEGEND,CALM&ORDER,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a2ca02d26c1e95db03690729bd31113bda7e4140-744x1039.png
+Green Father,UNL,1,LEGEND,CALM&ORDER,false,true,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d200178cde5075990f7ca1856675d02c4c2538be-744x1039.png
+Master of Shadows,VEN,1,LEGEND,FURY&CHAOS,false,true,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/75b7ba57a83af496b26d9fe7e8521f9a851bf464-744x1039.png
+Power Nexus,SFD,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/653db9a5f2aead0191c8d61da3d1876fb894b545-1039x744.png
+Sunken Temple,SFD,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/06f6d17929d19000006cf281d013ecbe1543af0e-1039x744.png
+Ornn's Forge,SFD,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e228948bc7a6d8ee858fbc0bed3d93a53f467097-1039x744.png
+The Arena's Greatest,OGN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2afd8bdfdd42b1595af0746a6c6b92879ac770d6-1038x744.png
+Obelisk of Power,OGN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0ef4890cdc3145616fcf41290a13c63b1afe4e0d-1038x744.png
+The Grand Plaza,OGN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f9ca8d04cb269ad99bca7e6dae874cad1bec336a-1038x744.png
+Aspirant's Climb,OGN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9301593f3800e68427469d38181b578a672473c3-1038x744.png
+Grove of the God-Willow,OGN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1574863000ab23d69cbd388a32b1a09f29f78d5f-1038x744.png
+Frozen Fortress,UNL,2,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b5e33fdb4ddc8c73e03bca648862fc080aa8bbcf-1039x744.png
+Trapping Grounds,UNL,2,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/234bb01e24892aefa024ae402f6ee7703ccdbbd4-1039x744.png
+Gardens of Becoming,UNL,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0497a44ab302ea055b6f1f0d00a36c8023ed2344-1039x744.png
+Dusk Rose Lab,UNL,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fa81c474ff29b9d2c42dd4e64a5789bf793e5221-1039x744.png
+Vaults of Helia,UNL,2,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9fc7b9a8294665881eece0dacaf3fc70e39f19e4-1039x744.png
+Abandoned Hall,UNL,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7447b04d1e78192509e89e5ff3556368ea5c471a-1039x744.png
+Black Flame Altar,UNL,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8cd4edde3e59c8edc8cdcea626fc443c5ed6e1f2-1039x744.png
+Ripper's Bay,UNL,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f6d0540edbabcdb7d5a6859ce2f820f744cb498c-1039x744.png
+Star Spring,UNL,2,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0c4fe88ffb5c1b02b58b2c6b4f02de441ac451d6-1039x744.png
+Valley of Idols,UNL,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4191aa2fda9e754a7f5421edc94bd829f5795650-1039x744.png
+Risen Altar,VEN,5,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/47402ed9d5eebb9e38176315bdaf1a556845eef7-1039x744.png
+Shadow Temple,VEN,7,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/635a3a0b724a2cfc11938ecbc1d8abddd89d3436-1039x744.png
+Threshold of the Gray,VEN,5,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5521aac82f036f1070326c743a9f653955d67bb9-1039x744.png
+Mystic Vortex,VEN,3,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/55f6fec944c489010464cb554c4661d94518fa75-1039x744.png
+Piltovan Forge,VEN,4,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0cc432b51e80d1734529ef323e601e62e202c2b1-1039x744.png
+Protective Sands,VEN,2,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a994ae712cdefcbdaf263fbb6ab0723d0f678e99-1039x744.png
+Kinkou Temple,VEN,2,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/afef083faa1f3813e5744a552c9873c798bedfd5-1039x744.png
+Dragon Roost,VEN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/94558ee0292d92126829036d32495cbf702e5391-1039x744.png
+Sandswept Tomb,VEN,1,BATTLEFIELD,NONE,false,false,https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d77c607878d6815e02796f8bfa8a5696ad5f1a7d-1039x744.png
