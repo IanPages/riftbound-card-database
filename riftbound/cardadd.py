@@ -146,7 +146,7 @@ def main() -> None:
                     break
 
         while True:
-            name = input("Card name (or 'exit'): ").strip()
+            name = input("Card name (or 'exit'): ").strip().title()
             if not name:
                 print("Card name cannot be empty.")
                 continue
