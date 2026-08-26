@@ -14,14 +14,17 @@ def slugify(text: str) -> str:
     return text.strip("-")
 
 
-def prompt_bool(prompt: str) -> bool:
+def prompt_bool(prompt: str, allow_exit: bool = False) -> bool | None:
     while True:
-        response = input(f"{prompt} [y/n]: ").strip().lower()
+        suffix = " [y/n/exit]: " if allow_exit else " [y/n]: "
+        response = input(f"{prompt}{suffix}").strip().lower()
+        if allow_exit and response == "exit":
+            return None
         if response in {"y", "yes"}:
             return True
         if response in {"n", "no"}:
             return False
-        print("Please enter y or n.")
+        print("Please enter y or n." if not allow_exit else "Please enter y, n, or exit.")
 
 
 ALLOWED_COLORS = {"CALM", "FURY", "MIND", "BODY", "CHAOS", "ORDER", "NONE"}
@@ -96,18 +99,16 @@ def find_image_url_in_db(db_cards: list[dict[str, str]], name: str, set_code: st
     return None
 
 
-def main() -> None:
-    print("Add or update Riftbound card entries")
-    print("Type 'exit' for card name to quit.\n")
-    
-    db_cards = load_all_cards_db()
-
+def prompt_color() -> str:
     while True:
-        card_color = input("Color(s) for this session (calm, fury, mind, body, chaos, order; separate with &, comma, semicolon, or space): ").strip()
-        if not card_color:
+        color_input = input("Color(s) for this session (calm, fury, mind, body, chaos, order; separate with &, comma, semicolon, or space; or 'exit'): ").strip()
+        if color_input.lower() == "exit":
+            return "exit"
+        
+        if not color_input:
             print("Color cannot be empty.")
             continue
-        normalized_color = normalize_color_input(card_color)
+        normalized_color = normalize_color_input(color_input)
         if not normalized_color:
             print("Color cannot be empty.")
             continue
@@ -115,17 +116,45 @@ def main() -> None:
         if invalid:
             print(f"Invalid color(s): {', '.join(invalid)}. Must be one of: calm, fury, mind, body, chaos, order.")
             continue
-        card_color = normalized_color
-        break
+        return normalized_color
+
+
+def main() -> None:
+    print("Add or update Riftbound card entries")
+    print("Type 'exit' for card name to quit.\n")
+    
+    db_cards = load_all_cards_db()
+    iterations = 0
+    card_color = ""
 
     while True:
-        name = input("Card name (or 'exit'): ").strip()
+        if iterations == 0:
+            card_color = prompt_color()
+            if card_color == "exit":
+                print("Done!")
+                break
+        else:
+            change_color = prompt_bool("Would you like to change the color?", allow_exit=True)
+            if change_color is None:
+                print("Done!")
+                break
+
+            if change_color:
+                card_color = prompt_color()
+                if card_color == "exit":
+                    print("Done!")
+                    break
+
+        while True:
+            name = input("Card name (or 'exit'): ").strip()
+            if not name:
+                print("Card name cannot be empty.")
+                continue
+            break
+
         if name.lower() == "exit":
             print("Done!")
             break
-        if not name:
-            print("Card name cannot be empty.")
-            continue
 
         while True:
             set_code = input("Set (3 letters): ").strip().upper()
@@ -137,10 +166,25 @@ def main() -> None:
                 continue
             break
 
-        card_type = input("Type (Legend/Unit/Rune/Spell/Gear/Battlefield/Token): ").strip().upper()
-        if not card_type:
-            print("Type cannot be empty.")
-            continue
+        while True:
+            card_quantity_str = input("How many copies do you own? ").strip()
+            if not card_quantity_str.isdigit() or int(card_quantity_str) < 1:
+                print("Quantity must be a number and greater than 0.")
+                continue
+            card_quantity = int(card_quantity_str)
+            break
+
+        while True:
+            card_type = input("Type (Legend/Unit/Rune/Spell/Gear/Battlefield/Token): ").strip().upper()
+            if card_type not in {"LEGEND", "UNIT", "RUNE", "SPELL", "GEAR", "BATTLEFIELD", "TOKEN"}:
+                print("Invalid card type. Make sure to select one of the allowed ones (Legend/Unit/Rune/Spell/Gear/Battlefield/Token)")
+                continue
+
+            if not card_type:
+                print("Type cannot be empty.")
+                continue
+
+            break
 
         alt_art = prompt_bool("Alt art?")
         overnumbered = prompt_bool("Overnumbered?")
@@ -157,9 +201,9 @@ def main() -> None:
         new_card = {
             "name": name,
             "set": set_code,
-            "quantity": "1",
+            "quantity": str(card_quantity),
             "type": card_type,
-            "color": normalize_color_input(card_color),
+            "color": card_color,
             "altArt": str(alt_art).lower(),
             "overnumbered": str(overnumbered).lower(),
             "image": image,
@@ -169,7 +213,7 @@ def main() -> None:
 
         if existing_index is not None:
             existing_card = cards[existing_index]
-            quantity = int(existing_card.get("quantity", "0") or "0") + 1
+            quantity = int(existing_card.get("quantity", "0") or "0") + card_quantity
             existing_card["quantity"] = str(quantity)
             print(f"Updated existing card: {existing_card['name']} ({existing_card['set']}) now quantity {existing_card['quantity']}")
         else:
@@ -177,6 +221,7 @@ def main() -> None:
             print(f"Added new card: {name} ({set_code}) with image '{image}'")
 
         save_cards(cards)
+        iterations += 1
 
 
 if __name__ == "__main__":
