@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div className="pb-5">
-      {/* Hero Section */}
       <div className="container hero">
         <div className="row d-flex align-items-center justify-content-center pt-5">
           <div className="col-12">
@@ -41,7 +40,6 @@ function App() {
         </div>
       </div>
 
-      {/* Filters Section */}
       <div className="container">
         <div className="row d-flex align-items-center justify-content-center pt-3">
           <div className="btn-group flex-wrap filter-buttons" role="group">
@@ -59,12 +57,9 @@ function App() {
         </div>
       </div>
 
-      {/* Counter Section */}
       <div className="container text-center mt-3">
         <h6 className="share-tech-regular-v2">Total Cards: {filteredCards.length}</h6>
       </div>
-
-      {/* Search Section */}
       <div className="container text-center">
         <input
           className="form-control w-75 mx-auto searchBar"
@@ -75,7 +70,6 @@ function App() {
         />
       </div>
 
-      {/* Card Grid */}
       <div className="container pt-5">
         <div className="row justify-content-center g-4">
           {loading ? (
@@ -92,7 +86,7 @@ function App() {
                   <img
                     src={card.image}
                     alt={card.name}
-                    className="card-img"
+                    className={` ${card.type === 'BATTLEFIELD' ? 'rotation' : 'card-img'} `}
                     loading="lazy"
                   />
                 </div>

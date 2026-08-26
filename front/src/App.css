@@ -15,14 +15,12 @@
   white-space: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
-  
-  background: linear-gradient(
-    135deg,
-    #ffffff,
-    #c4b5fd,
-    #8b5cf6,
-    #ffffff
-  );
+
+  background: linear-gradient(135deg,
+      #ffffff,
+      #c4b5fd,
+      #8b5cf6,
+      #ffffff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -31,9 +29,17 @@
 }
 
 @keyframes gradientText {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .share-tech-regular-v2 {
@@ -121,7 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 1px solid var(--border-color);
   cursor: pointer;
 }
@@ -161,4 +167,8 @@
 .card-wrapper:hover .card-caption {
   border-color: var(--accent-color);
   color: #fff;
+}
+
+.rotation {
+  transform: rotate(90deg) scale(0.4)
 }
